@@ -3,9 +3,9 @@ const db = require('../models/index');
 const Etf = db.Etfs;
 
 const addEtf = async (req, res) => {
-    const { symbol, name, index, currency, exchange, userId } = req.body;
+    const { ticker, name, asset, price, porfolio, userId } = req.body;
     try {
-        const etf = await Etf.create({symbol: symbol, name:name, index:index, currency:currency, exchange:exchange, userId:userId})
+        const etf = await Etf.create({ticker: ticker, name:name, asset:asset, price:price, porfolio:porfolio, userId:userId})
         res.status(200).send(etf)
     }catch(e) {
         res.status(400).send("User was not created", e)
