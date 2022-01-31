@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false,
             primaryKey: true
         },
-        symbol: {
+        ticker: {
             type: DataTypes.STRING,
             allowNull: false
         },
@@ -14,15 +14,15 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        index: {
+        asset: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        currency: {
-            type:  DataTypes.STRING,
+        price: {
+            type:  DataTypes.NUMBER,
             allowNull:false
         }, 
-        exchange: {
+        portfolio: {
             type:  DataTypes.STRING,
             allowNull:false
         }, 
