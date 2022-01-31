@@ -6,13 +6,13 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false,
             primaryKey: true
         },
-        ticker: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
         name: {
             type: DataTypes.STRING,
             allowNull: false,
+        },
+        ticker: {
+            type: DataTypes.STRING,
+            allowNull: false
         },
         asset: {
             type: DataTypes.STRING,
