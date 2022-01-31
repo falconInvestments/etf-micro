@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         name: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: false
         },
         ticker: {
             type: DataTypes.STRING,
@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         asset: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: false
         },
         price: {
             type: DataTypes.INTEGER,
