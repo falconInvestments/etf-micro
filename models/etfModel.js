@@ -27,7 +27,7 @@ module.exports = (sequelize, DataTypes) => {
             allowNull:false
         }, 
         expenseRatio: {
-            type: DataTypes.DECIMAL(7,3),
+            type: DataTypes.DECIMAL(3,2),
             allowNull:false
         },
         inceptionDate: {
