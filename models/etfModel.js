@@ -26,6 +26,14 @@ module.exports = (sequelize, DataTypes) => {
             type:  DataTypes.STRING,
             allowNull:false
         }, 
+        expenseRatio: {
+            type: DataTypes.STRING,
+            allowNull:false
+        },
+        inceptionDate: {
+            type: DataTypes.STRING,
+            allowNull:false
+        },
         userId: {
             type: DataTypes.INTEGER,
             allowNull: false
